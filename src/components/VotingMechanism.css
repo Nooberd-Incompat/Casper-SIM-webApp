@@ -1,0 +1,38 @@
+.voting-mechanism {
+    padding: 20px;
+    border: 1px solid #a6dff3;
+    margin: 10px;
+    background-color: #58DBEE;
+    border-radius: 5px;
+    color: black;
+}
+
+.vote-buttons button {
+    margin: 5px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.approve {
+    background-color: rgb(45, 131, 45);
+}
+
+.reject {
+    background-color: rgb(211, 108, 108);
+}
+
+.vote-buttons button:disabled {
+    background-color: whitesmoke;
+    cursor: not-allowed;
+}
+
+.voting-status {
+    margin-top: 20px;
+}
+
+.voting-status p {
+    font-size: 16px;
+}

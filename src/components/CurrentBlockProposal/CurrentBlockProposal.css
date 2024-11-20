@@ -1,0 +1,85 @@
+/* Container for the block proposal section */
+.current-block-proposal {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Title of the Block Proposal section */
+.current-block-proposal h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Description of the proposal */
+.current-block-proposal p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Input section for the block proposal form */
+.proposal-input-container {
+    margin-bottom: 20px;
+}
+
+/* Label for input fields */
+.proposal-input-container label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Input field for entering proposal details */
+.proposal-input-container input,
+.proposal-input-container textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+/* Button to submit the proposal */
+.submit-proposal-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-proposal-button:hover {
+    background-color: #45a049;
+}
+
+/* Displaying proposal success message */
+.success-message {
+    font-size: 16px;
+    color: #4CAF50;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Displaying error message */
+.error-message {
+    font-size: 16px;
+    color: #f44336;
+    margin-top: 15px;
+    text-align: center;
+}

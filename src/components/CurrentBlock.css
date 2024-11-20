@@ -1,0 +1,20 @@
+/* src/components/CurrentBlock.css */
+.current-block {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #d27c19;
+    border-radius: 10px;
+    background-color: #fdede3;
+    color: #a1410d;
+}
+
+.current-block h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: black;
+}
+
+.current-block p {
+    margin: 8px 0;
+    font-size: 1.1em;
+}

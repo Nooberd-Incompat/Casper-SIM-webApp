@@ -1,0 +1,81 @@
+.timeline {
+    max-width: 600px;
+    /* Center the timeline and restrict width */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for better emphasis */
+    max-height: 100px;
+}
+
+.timeline h2 {
+    text-align: center;
+    /* margin-bottom: 5px; */
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.timeline-container {
+    max-height: 200px;
+    /* Restrict height */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    /* padding: 5px 15px; */
+    scrollbar-width: thin;
+    /* Cross-browser thin scrollbar */
+
+}
+
+/* Scrollbar styling for Webkit (Chrome, Safari) */
+.timeline-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.timeline-container::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 5px;
+}
+
+.timeline-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.block {
+    background-color: #f8f9fa;
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle card shadow */
+    transition: transform 0.2s, background-color 0.3s;
+    cursor: pointer;
+}
+
+.block:hover {
+    transform: translateY(-3px);
+    /* Subtle lift effect */
+    background-color: #e9ecef;
+    /* Light highlight */
+}
+
+.block h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #212529;
+    font-weight: 600;
+}
+
+.block p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #495057;
+}
+
+/* Separator line between blocks */
+hr {
+    margin: 5px 0;
+    border: 0;
+    height: 1px;
+    background-color: #dee2e6;
+}
