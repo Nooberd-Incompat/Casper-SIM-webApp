@@ -8,7 +8,7 @@ const Timeline = ({ onSelectBlock, refreshTrigger }) => {
 
     const fetchBlocks = async () => {
         try {
-            const response = await fetch('http://localhost:5000/get-block-history');
+            const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/get-block-history`);
             const data = await response.json();
             setBlocksData(data.reverse()); // New blocks on top
         } catch (error) {

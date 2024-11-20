@@ -4,7 +4,7 @@ const ConfigurationDetails = () => {
     const [config, setConfig] = useState(null);
 
     useEffect(() => {
-        fetch('http://localhost:5000/get-configs')
+        fetch(`${process.env.REACT_APP_BACKEND_URL}/get-configs`)
             .then(response => response.json())
             .then(data => setConfig(data));
     }, []);

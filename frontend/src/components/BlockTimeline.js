@@ -6,7 +6,7 @@ const BlockTimeline = ({ onSelectBlock }) => {
     const [selectedBlock, setSelectedBlock] = useState(null);
 
     useEffect(() => {
-        const socket = io('http://localhost:5000'); // Ensure backend is running on this URL
+        const socket = io(`${process.env.REACT_APP_BACKEND_URL}`); // Ensure backend is running on this URL
 
         // Listen for block updates from backend
         socket.on('block_update', (newBlock) => {

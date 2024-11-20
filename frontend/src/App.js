@@ -9,7 +9,7 @@ export const SocketContext = createContext(null);
 
 // Create socket connection with error handling
 const createSocketConnection = () => {
-    const socket = io('http://localhost:5000', {
+    const socket = io(process.env.REACT_APP_BACKEND_URL, {
         transports: ['websocket', 'polling'],
         reconnection: true,
         reconnectionAttempts: 5,
@@ -122,24 +122,3 @@ function App() {
 }
 
 export default App;
-
-//have to make the block chain dynamic (backend required)
-// is vote being counted? proof attached below
-// Traceback (most recent call last):
-//   File "C:\Users\Yojith\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
-//     self.run()
-//   File "C:\Users\Yojith\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
-//     self._target(*self._args, **self._kwargs)
-//   File "C:\Users\Yojith\AppData\Local\Programs\Python\Python311\Lib\site-packages\socketio\server.py", line 589, in _handle_event_internal
-//     r = server._trigger_event(data[0], namespace, sid, *data[1:])
-//         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-//   File "C:\Users\Yojith\AppData\Local\Programs\Python\Python311\Lib\site-packages\socketio\server.py", line 614, in _trigger_event
-//     return handler(*args)
-//            ^^^^^^^^^^^^^^
-//   File "C:\Users\Yojith\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_socketio\__init__.py", line 293, in _handler
-//     return self._handle_event(handler, message, real_ns, sid,
-//            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-//   File "C:\Users\Yojith\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_socketio\__init__.py", line 838, in _handle_event
-//     ret = handler(*args)
-//           ^^^^^^^^^^^^^^
-// TypeError: handle_block_validation() takes 0 positional arguments but 1 was given

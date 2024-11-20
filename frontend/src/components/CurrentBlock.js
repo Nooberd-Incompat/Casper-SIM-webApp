@@ -30,7 +30,7 @@ const CurrentBlock = ({ question, proposedAnswer: newProposedAnswer, proposer,
     const fetchConfig = async () => {
         try {
             setIsLoading(true);
-            const response = await fetch('http://localhost:5000/get-configs');
+            const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/get-configs`);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }

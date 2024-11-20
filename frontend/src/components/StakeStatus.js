@@ -16,7 +16,7 @@ const StakeStatus = ({ botId }) => {
     // Function to fetch current stake
     const fetchStake = async () => {
         try {
-            const response = await fetch(`http://localhost:5000/get-stake/${botId}`);
+            const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/get-stake/${botId}`);
             const data = await response.json();
 
             if (data.stake !== undefined) {
