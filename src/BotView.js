@@ -12,7 +12,7 @@ import ConfigurationDetails from './components/ConfigurationDetails';
 
 // Create socket connection with error handling
 const createSocketConnection = () => {
-  const socket = io(`${process.env.REACT_APP_BACKEND_URL}`, {
+  const socket = io(process.env.REACT_APP_BACKEND_URL, {
     transports: ['websocket', 'polling'],
     reconnection: true,
     reconnectionAttempts: 5,
